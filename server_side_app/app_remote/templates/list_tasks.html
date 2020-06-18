@@ -1,0 +1,17 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <a href="https://app.asana.com/0/{{ project_id }}/{{ task.gid }}" target="_blank">{{ task.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <script type="text/javascript" src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
+    <script>
+        var action = 'notifySuccess';
+    </script>
+    <script src="/js/main.js"></script>
+</body>

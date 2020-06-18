@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "app_remote"
+version = "0.1.0"
+description = ""
+authors = ["Gabe <wei.g.chu@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "^1.1.2"
+requests = "^2.23.0"
+python-dotenv = "^0.13.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.3"
+black = "^19.10b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
